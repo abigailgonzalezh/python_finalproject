@@ -113,4 +113,22 @@ values (29, 'Tom Holland', 23, 1.70, 'Masculino', 'Geminis', 'Heterosexual', 'Ca
 insert into personas
 values (30, 'Jennifer Lawrence', 29, 1.75, 'Femenino', 'Leo', 'Heterosexual', 'Azul', 'Blanca', 20000);
 
+insert into personas
+values (31, 'Felicity Jones', 36, 1.60, 'Femenino', 'Libra', 'Heterosexual', 'Verde', 'Blanca', 80000);
+
+insert into personas
+values (32, 'Leonardo Di Caprio', 45, 1.83, 'Masculino', 'Escorpio', 'Heterosexual', 'Azul', 'Blanca', 10000);
+
+insert into personas
+values (33, 'Brad Pitt', 56, 1.80, 'Masculino', 'Sagitario', 'Heterosexual', 'Azul', 'Blanca', 60000);
+
+insert into personas
+values (34, 'Orlando Bloom', 43, 1.80, 'Masculino', 'Capricornio', 'Heterosexual', 'Cafe oscuro', 'Blanca', 80000);
+
+insert into personas
+values (35, 'Shakira', 43, 1.57, 'Femenino', 'Acuario', 'Heterosexual', 'Cafe oscuro', 'Clara', 100000);
+
+insert into personas
+values (36, 'Rihanna', 31, 1.73, 'Femenino', 'Piscis', 'Heterosexual', 'Verde', 'Morena', 200000);
+
 select * from personas;
