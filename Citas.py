@@ -4,7 +4,7 @@ from tkinter.ttk import *
 
 window = Tk()
 window.title("Citas app")
-window.geometry('700x400')
+window.geometry('1000x400')
 
 #Pedir nombre 
 lbl = Label(window, text="¿Cuál es tu nombre?", font=("Century Gothic", 12))
@@ -65,14 +65,6 @@ combo4['values']= ("Clara", "Morena", "Blanca", "Negra")
 combo4.current(0) #Seleccionar el valor que se mostrara
 combo4.grid(column=1, row=8, padx = 10, pady = 10)
 
-edadMinima = 0
-edadMaxima = 0
-genero = ""
-signo = ""
-sexualidad = ""
-colorOjos = ""
-colorPiel = ""
-
 #Boton aceptar con funcion que guarda los datos al dar aceptar
 def clicked():
     res = "Bienvenido " + txt.get()
@@ -100,11 +92,14 @@ def clicked():
     if(consulta.execute(sql,datos)): 
         filas = consulta.fetchall()
         if len(filas)>0:
-         for fila in filas:
-            #Imprimir datos 
-            #print(fila[0], fila[1], fila[2], fila[3], fila[4],fila[5], fila[6], fila[7], fila[8], fila[9])
+            i=0
+            lbl8 = Label(window, text="Felicidades. Hiciste match con alguien!!", font=("Century Gothic", 12))
+            lbl8.grid(column=4, row=0, padx = 10, pady = 10)
+            for fila in filas:
+                lbl9 = Label(window, text="Nombre: "+ str(fila[1]), font=("Century Gothic", 12))
+                lbl9.grid(column=4, row=1+1, padx = 10, pady = 10)
         else:
-             print("Ninguna persona coincide con tu criterio de busqueda")
+            print("Lo siento, no haces match con nadie")
     else:
         print("Error")
 
