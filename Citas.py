@@ -29,18 +29,49 @@ lbl3 = Label(window, text="¿Qué genero deseas que tenga tu cita?")
 lbl3.grid(column=0, row=4)
 combo = Combobox(window)
 combo['values']= ("Masculino", "Femenino", "Otro")
-combo.current(1) #Seleccionar el valor que se mostrara
+combo.current(0) #Seleccionar el valor que se mostrara
 combo.grid(column=1, row=4)
+
+#Pedir signo zodiacal
+lbl4 = Label(window, text="¿Qué signo zodiacal deseas que tenga tu cita?")
+lbl4.grid(column=0, row=5)
+combo1 = Combobox(window)
+combo1['values']= ("Aries", "Tauro", "Geminis", "Cancer", "Leo", "Virgo", "Libra", "Escorpio", "Acuario", "Piscis")
+combo1.current(0) #Seleccionar el valor que se mostrara
+combo1.grid(column=1, row=5)
+
+#Pedir sexualidad
+lbl5 = Label(window, text="¿Qué sexualidad deseas que tenga tu cita?")
+lbl5.grid(column=0, row=6)
+combo2 = Combobox(window)
+combo2['values']= ("Heterosexual", "Homosexual", "Asexual", "Pansexual")
+combo2.current(0) #Seleccionar el valor que se mostrara
+combo2.grid(column=1, row=6)
+
+#Color de ojos
+lbl6 = Label(window, text="¿Qué color de ojos deseas que tenga tu cita?")
+lbl6.grid(column=0, row=7)
+combo2 = Combobox(window)
+combo2['values']= ("Negros", "Cafe oscuro", "Cafe claro", "Verdes", "Azules",)
+combo2.current(0) #Seleccionar el valor que se mostrara
+combo2.grid(column=1, row=7)
+
+#Color de piel
+lbl7 = Label(window, text="¿Qué color de piel deseas que tenga tu cita?")
+lbl7.grid(column=0, row=8)
+combo3 = Combobox(window)
+combo3['values']= ("Clara", "Morena", "Blanca", "Negra")
+combo3.current(0) #Seleccionar el valor que se mostrara
+combo3.grid(column=1, row=8)
 
 #Boton aceptar con funcion que guarda los datos al dar aceptar
 def clicked():
- 
+
     res = "Bienvenido " + txt.get()
- 
     lbl.configure(text= res)
  
 btn = Button(window, text="Aceptar", command=clicked)
-btn.grid(column=0, row=5)
+btn.grid(column=0, row=9)
  
 window.mainloop()
 

@@ -69,13 +69,13 @@ insert into personas
 values (20, 'Michael B Jordan', 32, 1.82, 'Masculino', 'Acuario', 'Heterosexual', 'Cafe oscuro', 'Negra', 50000);
 
 insert into personas
-values (21, 'Zac Efron', 32, 1.73, 'Masculino', 'Libra', 'Heterosexual', 'Azul', 'Blanca', 60000);
+values (21, 'Zac Efron', 32, 1.73, 'Masculino', 'Libra', 'Heterosexual', 'Azules', 'Blanca', 60000);
 
 insert into personas
 values (22, 'Alicia Vikander', 31, 1.65, 'Femenino', 'Libra', 'Heterosexual', 'Cafe Oscuro', 'Clara', 60000);
 
 insert into personas
-values (23, 'Kristen Stewart', 29, 1.66, 'Femenino', 'Aries', 'Homosexual', 'Verde', 'Blanca', 80000);
+values (23, 'Kristen Stewart', 29, 1.66, 'Femenino', 'Aries', 'Homosexual', 'Verdes', 'Blanca', 80000);
 
 insert into personas
 values (24, 'Ellen Page', 32, 1.55, 'Femenino', 'Piscis', 'Homosexual', 'Cafe claro', 'Blanca', 30000);
@@ -87,16 +87,16 @@ insert into personas
 values (26, 'Ricky Martin', 48, 1.88, 'Masculino', 'Capricornio', 'Homosexual', 'Cafe claro', 'Clara', 100000);
 
 insert into personas
-values (27, 'Michael Fassbender', 42, 1.83, 'Masculino', 'Aries', 'Heterosexual', 'Azul', 'Blanca', 50000);
+values (27, 'Michael Fassbender', 42, 1.83, 'Masculino', 'Aries', 'Heterosexual', 'Azules', 'Blanca', 50000);
 
 insert into personas
-values (28, 'Tom Hiddleston', 38, 1.88, 'Masculino', 'Acuario', 'Heterosexual', 'Azul', 'Blanca', 90000);
+values (28, 'Tom Hiddleston', 38, 1.88, 'Masculino', 'Acuario', 'Heterosexual', 'Azules', 'Blanca', 90000);
 
 insert into personas
 values (29, 'Tom Holland', 23, 1.70, 'Masculino', 'Geminis', 'Heterosexual', 'Cafe oscuro', 'Blanca', 20000);
 
 insert into personas
-values (30, 'Jennifer Lawrence', 29, 1.75, 'Femenino', 'Leo', 'Heterosexual', 'Azul', 'Blanca', 20000);
+values (30, 'Jennifer Lawrence', 29, 1.75, 'Femenino', 'Leo', 'Heterosexual', 'Azules', 'Blanca', 20000);
 """
 
 #Ejecutar la consulta de insercion de datos
