@@ -92,7 +92,8 @@ def clicked():
 
     #Codigo sql para mostrar todos los datos de la tabla
     sql = "SELECT * FROM personas WHERE edad BETWEEN ? AND ? AND genero=? AND signo=? AND sexualidad=? AND color_ojos=? AND color_piel=?" 
-    print(datos)
+    
+    #print(datos)
 
     #Ejecutar la consulta de consulta de datos
     if(consulta.execute(sql,datos)): 
@@ -100,7 +101,7 @@ def clicked():
         if len(filas)>0:
          for fila in filas:
             print(fila[0], fila[1], fila[2], fila[3], fila[4],fila[5], fila[6], fila[7], fila[8], fila[9])
-         else:
+        else:
              print("Ninguna persona coincide con tu criterio de busqueda")
     else:
         print("Error")
