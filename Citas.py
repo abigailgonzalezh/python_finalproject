@@ -7,62 +7,62 @@ window.title("Citas app")
 window.geometry('700x400')
 
 #Pedir nombre 
-lbl = Label(window, text="¿Cuál es tu nombre?")
-lbl.grid(column=0, row=0)
-txt = Entry(window,width=10)
-txt.grid(column=1, row=0)
+lbl = Label(window, text="¿Cuál es tu nombre?", font=("Century Gothic", 12))
+lbl.grid(column=0, row=0, padx = 10, pady = 10)
+txt = Entry(window, width=40, justify = CENTER)
+txt.grid(column=1, row=0, padx = 10, pady = 10)
 
 #Pedir edad minima
-lbl1 = Label(window, text="¿Cuál es la edad minima que deseas que tenga tu cita?")
-lbl1.grid(column=0, row=2)
-txtEdadMinima = Entry(window,width=10)
-txtEdadMinima.grid(column=1, row=2)
+lbl1 = Label(window, text="¿Cuál es la edad mínima que deseas que tenga tu cita?", font=("Century Gothic", 12))
+lbl1.grid(column=0, row=2, padx = 10, pady = 10)
+txtEdadMinima = Entry(window, width=20, justify = CENTER)
+txtEdadMinima.grid(column=1, row=2, padx = 10, pady = 10)
 
 #Pedir edad Maxima
-lbl2 = Label(window, text="¿Cuál es la edad maxima que deseas que tenga tu cita?")
-lbl2.grid(column=0, row=3)
-txtEdadMaxima = Entry(window,width=10)
-txtEdadMaxima.grid(column=1, row=3)
+lbl2 = Label(window, text="¿Cuál es la edad máxima que deseas que tenga tu cita?", font=("Century Gothic", 12))
+lbl2.grid(column=0, row=3, padx = 10, pady = 10)
+txtEdadMaxima = Entry(window, width=20, justify = CENTER)
+txtEdadMaxima.grid(column=1, row=3, padx = 10, pady = 10)
 
 #Pedir genero
-lbl3 = Label(window, text="¿Qué genero deseas que tenga tu cita?")
-lbl3.grid(column=0, row=4)
-combo = Combobox(window)
+lbl3 = Label(window, text="¿Qué género deseas que tenga tu cita?", font=("Century Gothic", 12))
+lbl3.grid(column=0, row=4, padx = 10, pady = 10)
+combo = Combobox(window, state='readonly')
 combo['values']= ("Masculino", "Femenino", "Otro")
 combo.current(0) #Seleccionar el valor que se mostrara
-combo.grid(column=1, row=4)
+combo.grid(column=1, row=4, padx = 10, pady = 10)
 
 #Pedir signo zodiacal
-lbl4 = Label(window, text="¿Qué signo zodiacal deseas que tenga tu cita?")
-lbl4.grid(column=0, row=5)
-combo1 = Combobox(window)
+lbl4 = Label(window, text="¿Qué signo zodiacal deseas que tenga tu cita?", font=("Century Gothic", 12))
+lbl4.grid(column=0, row=5, padx = 10, pady = 10)
+combo1 = Combobox(window, state='readonly')
 combo1['values']= ("Aries", "Tauro", "Geminis", "Cancer", "Leo", "Virgo", "Libra", "Escorpio", "Acuario", "Piscis")
 combo1.current(0) #Seleccionar el valor que se mostrara
-combo1.grid(column=1, row=5)
+combo1.grid(column=1, row=5, padx = 10, pady = 10)
 
 #Pedir sexualidad
-lbl5 = Label(window, text="¿Qué sexualidad deseas que tenga tu cita?")
-lbl5.grid(column=0, row=6)
-combo2 = Combobox(window)
+lbl5 = Label(window, text="¿Qué sexualidad deseas que tenga tu cita?", font=("Century Gothic", 12))
+lbl5.grid(column=0, row=6, padx = 10, pady = 10)
+combo2 = Combobox(window, state='readonly')
 combo2['values']= ("Heterosexual", "Homosexual", "Asexual", "Pansexual")
 combo2.current(0) #Seleccionar el valor que se mostrara
-combo2.grid(column=1, row=6)
+combo2.grid(column=1, row=6, padx = 10, pady = 10)
 
 #Color de ojos
-lbl6 = Label(window, text="¿Qué color de ojos deseas que tenga tu cita?")
-lbl6.grid(column=0, row=7)
-combo3 = Combobox(window)
+lbl6 = Label(window, text="¿Qué color de ojos deseas que tenga tu cita?", font=("Century Gothic", 12))
+lbl6.grid(column=0, row=7, padx = 10, pady = 10)
+combo3 = Combobox(window, state='readonly')
 combo3['values']= ("Negros", "Cafe oscuro", "Cafe claro", "Verdes", "Azules",)
 combo3.current(0) #Seleccionar el valor que se mostrara
-combo3.grid(column=1, row=7)
+combo3.grid(column=1, row=7, padx = 10, pady = 10)
 
 #Color de piel
-lbl7 = Label(window, text="¿Qué color de piel deseas que tenga tu cita?")
-lbl7.grid(column=0, row=8)
-combo4 = Combobox(window)
+lbl7 = Label(window, text="¿Qué color de piel deseas que tenga tu cita?", font=("Century Gothic", 12))
+lbl7.grid(column=0, row=8, padx = 10, pady = 10)
+combo4 = Combobox(window, state='readonly')
 combo4['values']= ("Clara", "Morena", "Blanca", "Negra")
 combo4.current(0) #Seleccionar el valor que se mostrara
-combo4.grid(column=1, row=8)
+combo4.grid(column=1, row=8, padx = 10, pady = 10)
 
 edadMinima = 0
 edadMaxima = 0
@@ -116,7 +116,7 @@ def clicked():
     conexion.close()
     
 btn = Button(window, text="Aceptar", command=clicked)
-btn.grid(column=0, row=9)    
+btn.grid(column=0, row=9, padx = 10, pady = 10)    
 
 window.mainloop()
 
