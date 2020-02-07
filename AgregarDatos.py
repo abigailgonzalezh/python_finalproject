@@ -118,6 +118,25 @@ values (36, 'Sandra Bullock', 55, 1.72, 'Femenino', 'Leo', 'Heterosexual', 'Cafe
 
 insert into personas
 values (37, 'Rupert Grint', 31, 1.73, 'Femenino', 'Virgo', 'Heterosexual', 'Verdes', 'Blanca', 20000);
+
+insert into personas
+values (38, 'Felicity Jones', 36, 1.60, 'Femenino', 'Libra', 'Heterosexual', 'Verde', 'Blanca', 80000);
+
+insert into personas
+values (39, 'Leonardo Di Caprio', 45, 1.83, 'Masculino', 'Escorpio', 'Heterosexual', 'Azul', 'Blanca', 10000);
+
+insert into personas
+values (40, 'Brad Pitt', 56, 1.80, 'Masculino', 'Sagitario', 'Heterosexual', 'Azul', 'Blanca', 60000);
+
+insert into personas
+values (41, 'Orlando Bloom', 43, 1.80, 'Masculino', 'Capricornio', 'Heterosexual', 'Cafe oscuro', 'Blanca', 80000);
+
+insert into personas
+values (42, 'Shakira', 43, 1.57, 'Femenino', 'Acuario', 'Heterosexual', 'Cafe oscuro', 'Clara', 100000);
+
+insert into personas
+values (43, 'Rihanna', 31, 1.73, 'Femenino', 'Piscis', 'Heterosexual', 'Verde', 'Morena', 200000);
+
 """
 
 #Ejecutar la consulta de insercion de datos

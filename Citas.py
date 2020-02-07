@@ -4,7 +4,7 @@ from tkinter.ttk import *
 
 window = Tk()
 window.title("Citas app")
-window.geometry('1000x400')
+window.geometry('1200x500')
 
 #Pedir nombre 
 lbl = Label(window, text="¿Cuál es tu nombre?", font=("Century Gothic", 12))
@@ -67,7 +67,7 @@ combo4.grid(column=1, row=8, padx = 10, pady = 10)
 
 #Boton aceptar con funcion que guarda los datos al dar aceptar
 def clicked():
-    res = "Bienvenido " + txt.get()
+    res = txt.get()
     edadMinima = txtEdadMinima.get()
     edadMaxima = txtEdadMaxima.get()
     genero = combo.get()
@@ -89,17 +89,22 @@ def clicked():
     #print(datos)
 
     #Ejecutar la consulta de consulta de datos
-    if(consulta.execute(sql,datos)): 
+    if(consulta.execute(sql,datos)):
         filas = consulta.fetchall()
         if len(filas)>0:
             i=0
-            lbl8 = Label(window, text="Felicidades. Hiciste match con alguien!!", font=("Century Gothic", 12))
+            lbl8 = Label(window, text="Felicidades, " + str(res) + ". Hiciste match con alguien!!", font=("Century Gothic", 12))
             lbl8.grid(column=4, row=0, padx = 10, pady = 10)
             for fila in filas:
                 lbl9 = Label(window, text="Nombre: "+ str(fila[1]), font=("Century Gothic", 12))
-                lbl9.grid(column=4, row=1+1, padx = 10, pady = 10)
+                lbl9.grid(column=4, row=i+1, padx = 10, pady = 10)
+                i+=1
         else:
-            print("Lo siento, no haces match con nadie")
+            lb20 = Label(window, text="Lo siento, " + str(res) + ", no haces match con nadie.  ", font=("Century Gothic", 12))
+            lb20.grid(column=4, row=0, padx = 10, pady = 10)
+            for j in range(5):
+                lb21 = Label(window, text=":(")
+                lb21.grid(column=4, row=j+1, padx = 10, pady = 10)
     else:
         print("Error")
 
