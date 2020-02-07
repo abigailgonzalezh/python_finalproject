@@ -97,6 +97,27 @@ values (29, 'Tom Holland', 23, 1.70, 'Masculino', 'Geminis', 'Heterosexual', 'Ca
 
 insert into personas
 values (30, 'Jennifer Lawrence', 29, 1.75, 'Femenino', 'Leo', 'Heterosexual', 'Azules', 'Blanca', 20000);
+
+insert into personas
+values (31, 'Luis Miguel', 49, 1.78, 'Masculino', 'Aries', 'Heterosexual', 'Verdes', 'Morena', 20000);
+
+insert into personas
+values (32, 'Stefani Angelina', 33, 1.55, 'Femenino', 'Aries', 'Bisexual', 'Verdes', 'Blanca', 20000);
+
+insert into personas
+values (33, 'Robert Pattinson', 33, 1.85, 'Masculino', 'Tauro', 'Heterosexual', 'Azules', 'Blanca', 20000);
+
+insert into personas
+values (34, 'Alfredo Pacino', 79, 1.70, 'Masculino', 'Tauro', 'Heterosexual', 'Azules', 'Blanca', 20000);
+
+insert into personas
+values (35, 'Naomi Campbell', 49, 1.77, 'Femenino', 'Geminis', 'Heterosexual', 'Cafe oscuro', 'Negra', 20000);
+
+insert into personas
+values (36, 'Sandra Bullock', 55, 1.72, 'Femenino', 'Leo', 'Heterosexual', 'Cafe oscuro', 'Clara', 20000);
+
+insert into personas
+values (37, 'Rupert Grint', 31, 1.73, 'Femenino', 'Virgo', 'Heterosexual', 'Verdes', 'Blanca', 20000);
 """
 
 #Ejecutar la consulta de insercion de datos

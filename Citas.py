@@ -44,7 +44,7 @@ combo1.grid(column=1, row=5, padx = 10, pady = 10)
 lbl5 = Label(window, text="¿Qué sexualidad deseas que tenga tu cita?", font=("Century Gothic", 12))
 lbl5.grid(column=0, row=6, padx = 10, pady = 10)
 combo2 = Combobox(window, state='readonly')
-combo2['values']= ("Heterosexual", "Homosexual", "Asexual", "Pansexual")
+combo2['values']= ("Heterosexual", "Homosexual", "Asexual", "Pansexual", "Bisexual")
 combo2.current(0) #Seleccionar el valor que se mostrara
 combo2.grid(column=1, row=6, padx = 10, pady = 10)
 
@@ -100,7 +100,8 @@ def clicked():
         filas = consulta.fetchall()
         if len(filas)>0:
          for fila in filas:
-            print(fila[0], fila[1], fila[2], fila[3], fila[4],fila[5], fila[6], fila[7], fila[8], fila[9])
+            #Imprimir datos 
+            #print(fila[0], fila[1], fila[2], fila[3], fila[4],fila[5], fila[6], fila[7], fila[8], fila[9])
         else:
              print("Ninguna persona coincide con tu criterio de busqueda")
     else:
